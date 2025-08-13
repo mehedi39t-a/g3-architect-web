@@ -142,10 +142,71 @@
   color: #FF900E;
 }
 
+/* feature love and enjoy style  */
+.feature-love {
+  /* margin-top: 130px; */
+  gap: 165px;
+  max-width: 1459px;
+  justify-content: center;
+  margin: 130px auto;
+  /* overflow: auto; */
+}
+
+.feature-love-title {
+  margin-bottom: 0px;
+}
+
+#feature-love-border {
+  border-left: 5px solid #FF900E;
+  padding-left: 21px;
+}
+
+.feature-love-card {
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.feature-love-card .feature-love-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.feature-love-architect img {
+  width: 100%;
+}
+
+.experience-button {
+  padding: 42px 46px;
+  background-color: #FF900E;
+  border-radius: 8px;
+  margin-left: -107px;
+  margin-top: -119px;
+}
+
+#work-time {
+  font-size: 4.06rem;
+  font-weight: 700;
+}
+
+#work-experience {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 /* Some facts Style  */
-.fact--container {
+.fact {
   max-width: 1380px;
-  margin: 70px auto;
+  margin: 0 auto;
+}
+
+.fact-container {
+  max-width: 542px;
+  /* margin: 0 auto; */
+  /* justify-items: baseline; */
 }
 
 .fact-title {
@@ -164,6 +225,8 @@
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 124.17px;
+  /* max-width: 1380px; */
+  /* margin: 0 auto; */
 
 }
 
@@ -215,13 +278,26 @@
   filter: grayscale(100%);
 }
 
+/* Footer style  */
+footer {
+  max-width: 1440px;
+  background-color: #FFF4E7;
+  margin: 130px auto 216px;
+  padding: 38px;
+}
+
+footer p {
+  text-align: center;
+}
+
 /* Responsive  */
 
 @media screen and (max-width:576px) {
 
   .navbar,
   .nav-links,
-  .feature-container {
+  .feature-container,
+  .feature-love {
     flex-direction: column;
   }
 
@@ -240,15 +316,22 @@
     gap: 24px;
   }
 
+  .experience-button {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
   .sponsor-icon {
     justify-items: center;
-    gap: 40px;
+    gap: 50px;
   }
 }
 
 /* Responsive Medium Device */
 @media screen and (min-width:576px) and (max-width:992px) {
-  .feature-container {
+
+  .feature-container,
+  .feature-love {
     flex-direction: column;
   }
 
@@ -259,6 +342,19 @@
 
   .feature-content {
     margin: 50px auto;
+  }
+
+  .experience-button {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .sponsor-icon,
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+
   }
 
 }
